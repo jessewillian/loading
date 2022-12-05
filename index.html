@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+
+    <style>
+        .bode {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque
+        }
+
+        .load {
+            position: absolute;
+            width: 60px;
+            height: 200px;
+
+            border: rgba(0, 0, 0, 0.50) solid;
+            border-radius: 50%;
+
+            animation: loading 2s infinite linear;
+        }
+
+        .load.-first {
+            width: 200px;
+            height: 60px;
+        }
+
+        @keyframes loading {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .botao {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            padding: 20px;
+            border: none;
+            background-color: brown;
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body class="bode">
+    <a href="circle.html" class="botao" type="button">NEXT</a>
+
+    <div class="load"></div>
+    <div class="load -first"></div>
+
+</body>
+
+</html>

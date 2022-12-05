@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading circle</title>
+
+    <style>
+        .bode {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: bisque;
+        }
+
+        .load {
+            width: 60px;
+            height: 60px;
+
+            border: solid rgba(0, 0, 0, 0.20);
+            border-left-color: red;
+            border-radius: 50%;
+            animation: loading 1.5s infinite linear;
+        }
+
+        @keyframes loading {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .botao {
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            padding: 20px;
+            border: none;
+            background-color: brown;
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body class="bode">
+
+    <a class="botao" href="index.html">BACK</a>
+
+    <div class="load"></div>
+
+</body>
+
+</html>
